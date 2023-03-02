@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/sleepDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            tools:text="MM/DD/YYYY" />
+
+        <TextView
+            android:id="@+id/sleepNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sleepDate"
+            android:text=""
+            tools:text="This is filler." />
+
+        <TextView
+            android:id="@+id/hoursDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/sleepLength"
+            android:text="Slept: " />
+
+        <TextView
+            android:id="@+id/sleepLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            tools:text="8 Hours" />
+
+        <TextView
+            android:id="@+id/ratingDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sleepLength"
+            android:layout_toStartOf="@+id/sleepRating"
+            android:text="Rating: " />
+
+        <TextView
+            android:id="@+id/sleepRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sleepLength"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            tools:text="3/10" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
