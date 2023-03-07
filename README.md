@@ -1,27 +1,23 @@
-# Android Project 5 - *Name of App Here*
+# Android Project 6 - BitFit
 
 Submitted by: Nilmo Contreras
 
-BitFit is a health metrics app that allows users to track Sleep
+BitFit is a health metrics app that allows users to track sleep
 
-Time spent: **8** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **At least one health metric is tracked (based on user input)**
-  - Chosen metric(s): sleep
-- [x] **There is a "create entry" UI that prompts users to make their daily entry**
-- [x] **New entries are saved in a database and then updated in the RecyclerView**
-- [x] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
- 
+- [x] **Use at least 2 Fragments**
+- [x] **Create a new dashboard fragment where users can see a summary of their entered data**
+- [x] **Use one of the Navigation UI Views (BottomNavigation, Drawer Layout, Top Bar) to move between the fragments**
+
 The following **optional** features are implemented:
 
-- [ ] **Create a UI for tracking averages and trends in metrics**
-- [ ] **Improve and customize the user interface through styling and coloring**
-- [ ] **Implement orientation responsivity**
-- [ ] **Add a daily photo feature**
+- [ ] **Add a more advanced UI (e.g: Graphing) for tracking trends in metrics**
+- [ ] **Implement daily notifications to prompt users to fill in their data**
 
 The following **additional** features are implemented:
 
@@ -31,10 +27,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://user-images.githubusercontent.com/77853767/222334964-0a19b7ff-ad9f-4e68-be25-a0180882526b.gif' width='' alt='Video Walkthrough' />
+<img src='https://user-images.githubusercontent.com/77853767/223293370-33168fa0-a669-4ed4-b3a3-5fe4654b56fc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LICEcap 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
