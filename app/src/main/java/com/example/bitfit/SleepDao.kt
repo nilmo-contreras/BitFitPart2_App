@@ -20,8 +20,8 @@ interface SleepDao {
     fun deleteAll()
 
     @Query("SELECT avg(sleepLength) FROM sleep_table")
-    fun getAverageLength(): Flow<Int>
+    fun getAverageLength(): Double
 
     @Query("SELECT avg(sleepRating) FROM sleep_table")
-    fun getAverageRating(): Flow<Int>
+    fun getAverageRating(): Double
 }

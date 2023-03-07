@@ -5,19 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_previous"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        card_view:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:menu="@menu/bottom_navigation_menu"/>
+        card_view:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_sleep" />
 </androidx.constraintlayout.widget.ConstraintLayout>

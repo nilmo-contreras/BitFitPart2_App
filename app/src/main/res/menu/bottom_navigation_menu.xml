@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/baseline_space_dashboard_24"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nav_sleeplist"
+        android:icon="@drawable/baseline_bed_24"
+        android:title="Sleep" />
+</menu>

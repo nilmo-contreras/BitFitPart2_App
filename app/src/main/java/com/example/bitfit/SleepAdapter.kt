@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.res.TypedArrayUtils.getString
 import androidx.recyclerview.widget.RecyclerView
 
 class SleepAdapter (private val context: Context, private val sleeps: List<DisplaySleep>) :
@@ -33,9 +34,12 @@ class SleepAdapter (private val context: Context, private val sleeps: List<Displ
 
         // helper method to help set up the onBindViewHolder method
         fun bind(sleep: DisplaySleep) {
+            val sleepLength = "${sleep.sleepLength} hours"
+            val sleepRating = "${sleep.sleepRating}/10"
+
             dateTextView.text = sleep.sleepDate
-            hoursTextView.text = sleep.sleepLength.toString()
-            ratingTextView.text = sleep.sleepRating.toString()
+            hoursTextView.text = sleepLength
+            ratingTextView.text = sleepRating
             notesTextView.text = sleep.sleepNotes
         }
 
